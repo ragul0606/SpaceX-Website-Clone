@@ -45,17 +45,161 @@ li {
 
 .btn {
   display: inline-block;
-  border-radius: 8px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.75rem 2.5rem;
   margin-top: 0.5rem;
-  text-transform: capitalize;
-  font-size: 1.2rem;
-  font-weight: 500;
+  font-size: 0.75rem;
+  font-weight: 600;
   cursor: pointer;
   /* customize */
-  background-color: #1c2042;
+  background-color: transparent;
   color: white;
-  border: 2px solid #1c2042;
+  border: 2px solid white;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #000;
+}
+
+header {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  position: fixed;
+}
+
+.navbar {
+  display: none;
+}
+
+.link-desktop {
+  display: none;
+}
+
+.logo {
+  width: 8.5rem;
+  height: auto;
+}
+
+.link {
+  color: #fff;
+  font-size: 0.83rem;
+  font-weight: 500;
+}
+
+.box-1 {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../Images/STARSHIP_Testflight_MOBILE_3be065456e.jpg);
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 2rem;
+}
+
+.box-2 {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../Images/Star5_6_DSC_2777_mobile_f7992a93fe.jpg);
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 2rem;
+}
+
+.box-3 {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../Images/Via_Sat_3_outside39mound_DSC_5674_1_mobile_8d7eaca692.jpg);
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 2rem;
+}
+
+.box-4 {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../Images/homepage_1054_1_mobile_cad99a6947.jpg);
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 2rem;
+}
+
+.box-5 {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../Images/Homepage_Mobile_647a5aee3b.webp);
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 2rem;
+}
+
+.main-heading {
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+}
+
+.heading-support {
+  margin-top: -0.85rem;
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 8rem;
+  background-color: #000;
+}
+
+.spacex-right {
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.footer-anchor {
+  padding: 0 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: white;
+}
+
+.anchor-tag-a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 576px) {
@@ -64,6 +208,70 @@ li {
 /* Medium devices (tablets) */
 
 @media (min-width: 768px) {
+  header {
+    justify-content: space-between;
+    padding: 2rem 2rem;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .link {
+    font-size: 0.85rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .link-desktop,
+  .link-i {
+    display: inline;
+    font-size: 0.85rem;
+    color: white;
+    font-weight: 500;
+  }
+
+  .box-1 {
+    background-image: url(../Images/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg);
+  }
+
+  .box-2 {
+    background-image: url(../Images/Star5_6_DSC_2777_desktop_19c3b97615.jpg);
+  }
+
+  .box-3 {
+    background-image: url(../Images/Via_Sat_3_outside39mound_DSC_5674_1_desktop_1843517ce0.jpg);
+  }
+
+  .box-4 {
+    background-image: url(../Images/homepage_1054_desktop_a52a06e9f7.jpg);
+  }
+
+  .box-5 {
+    background-image: url(../Images/Homepage_Desktop_5ebdeb0c6c.webp);
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 5rem;
+  }
+
+  .spacex-right {
+    font-size: 0.75rem;
+    font-weight: 300;
+  }
+
+  .footer-anchor {
+    font-size: 0.7rem;
+  }
+
+  .anchor-tag-a {
+    gap: 2rem;
+  }
 }
 
 /* Large devices (desktops) */
