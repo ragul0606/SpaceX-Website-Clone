@@ -272,6 +272,14 @@ footer {
   .anchor-tag-a {
     gap: 2rem;
   }
+
+  .main-heading {
+    font-size: 2.5rem;
+  }
+
+  .heading-support {
+    margin-top: -1rem;
+  }
 }
 
 /* Large devices (desktops) */
